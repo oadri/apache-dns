@@ -1,0 +1,16 @@
+;
+; BIND data file for oadri.gal
+;
+$TTL	604800
+@	IN	SOA	oadri.gal. root.oadri.gal. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ns.oadri.gal.
+ns	IN	A	100.0.0.254
+oadri.gal.	IN	A	100.0.0.10
+paxina1 IN  CNAME   oadri.gal.
+paxina2 IN  CNAME   oadri.gal.
